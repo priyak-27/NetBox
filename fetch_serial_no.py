@@ -10,14 +10,14 @@ import json
 # ============fetch serial number from NetBox====================
 
 netbox_url = "enter your netbox URL"
-netbox_api_key = "5enter your netbox token"
+netbox_api_key = "enter your netbox token"
 
 response = pynetbox.api(url=f"https://{netbox_url}", token=netbox_api_key)
 response.http_session.verify = False
 urllib3.disable_warnings()
 
 
-# Fetch all devices with the manufacturer "Cisco"
+# Fetch all devices
 devices = response.dcim.devices.all()
 
 # Open a CSV file in write mode
