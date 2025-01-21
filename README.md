@@ -16,9 +16,7 @@ To run these scripts, the following Python libraries are required:
 ## Script Details
 
 ### add_new_site.py
-This script automates adding new sites to NetBox by reading site details from an Excel file. It prevents duplicate entries, logs errors if a site cannot be created, and provides status updates for successful additions.
-•	Input: Excel file with site details (name, location, status, region, physical address)
-•	Output: Adds the site details to NetBox
+This script automates adding new sites to NetBox by reading site details from an Excel file with site details (name, location, status, region, physical address). It prevents duplicate entries, logs errors if a site cannot be created, and provides status updates for successful additions.
 
 ### coverage_end_date_in6month.py
 This script, designed as a custom NetBox report, identifies devices whose coverage will end within the next six months. It retrieves and displays the device name, site name, serial number, and coverage end date if the end date falls within the next six months. The script calculates the six-month period from the current date and logs relevant device information for easy tracking.
